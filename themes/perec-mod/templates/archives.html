@@ -6,8 +6,10 @@
   <div id="article_text">
     <dl>
       {% for article in dates %}
-      <dt>{{ article.locale_date }}</dt>
-      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+      	{% if not article.metadata.visible_draft or not article.metadata.visible_draft.lower() == "true" %}
+	      <dt>{{ article.locale_date }}</dt>
+	      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+	    {% endif %}
       {% endfor %}
     </dl>
   </div>
