@@ -5,7 +5,7 @@
 <article>
   <div id="article_title">
     <h1 id="no_vertical_margin">
-      {% if article.metadata.visible_draft %}
+      {% if article.status.lower() == "draft" and article.metadata.visible_draft.lower() == "true" %}
         <a class="button_more" href="{{ SITEURL }}/">{{ article.title }}</a>
       {% else %}
         <a class="button_more" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
@@ -15,7 +15,7 @@
     {{ article.summary }}
   </div>
   <div id="article_more">
-	{% if article.metadata.visible_draft %}
+	{% if article.status.lower() == "draft" and article.metadata.visible_draft.lower() == "true" %}
 		<a class="button_more" href="{{ SITEURL }}/">Coming Soon</a>
 	{% else %}
 		<a class="button_more" href="{{ SITEURL }}/{{ article.url }}">Read &rarr;</a>

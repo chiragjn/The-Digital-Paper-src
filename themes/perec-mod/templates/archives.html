@@ -6,7 +6,7 @@
   <div id="article_text">
     <dl>
       {% for article in dates %}
-      	{% if not article.metadata.visible_draft or not article.metadata.visible_draft.lower() == "true" %}
+      	{% if article.status.lower() == "published" %}
 	      <dt>{{ article.locale_date }}</dt>
 	      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
 	    {% endif %}
