@@ -4,7 +4,7 @@ Perec-Mod is an evolving modification of the [Perec](https://github.com/ggimse/p
 
 It  is still rather rough in some areas.
 
-This not production ready.
+This is not production ready.
 
 ## DEMO Site
 
