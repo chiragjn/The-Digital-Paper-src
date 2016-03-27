@@ -31,8 +31,8 @@ DELETE_OUTPUT_DIRECTORY = True
 #          ('You can modify those links in your config file', '#'),)
 
 SOCIAL = (('github', 'https://github.com/chiragjn/'),
-		  ('at', 'mailto:jain.chiragjn925@gmail.com'),
-          ('facebook','https://www.facebook.com/chiragjn925'),
+		  ('at', 'mailto:jain.chirag925@gmail.com'),
+          ('facebook','https://www.facebook.com/chiragjn101'),
           ('twitter', 'http://www.twitter.com/chiragjn101'),
           ('stack-overflow','http://stackoverflow.com/users/3697191/chiragjn'),
           ('linkedin','http://linkedin.com/in/chiragjn'))
