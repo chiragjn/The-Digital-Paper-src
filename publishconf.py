@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = False
 OUTPUT_PATH = 'github_output'
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+DISQUS_SITENAME = "thedigitalpaper"
+GOOGLE_ANALYTICS = "UA-82047790-1"
