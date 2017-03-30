@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
-<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+<link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/kudosplease-min.css">
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
 {% endblock %}
@@ -41,7 +41,7 @@
         var disqus_url = "{{ SITEURL }}/{{ article.url }}";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+        dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
       </script>
