@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
 <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/kudosplease-min.css">
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
 {% endblock %}
 
@@ -30,9 +29,6 @@
     </p>
     {% endif %}
   </div>
-  <!-- <div class="pull-right show-inline">
-    <div class="kudos small-size" data-amount="0" data-url=""></div>
-  </div> -->
   {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
     <div class="comments">
       <div id="disqus_thread"></div>
@@ -53,21 +49,4 @@
 {% block footer %}
 <p><a href="{{ SITEURL }}/" class="button_accent">&larr; Back to Index</a></p>
 <script src="{{ SITEURL }}/theme/js/jquery-2.1.1.min.js"></script>
-<!-- <script src="{{ SITEURL }}/theme/js/kudosplease-min.js"></script> -->
-<!-- <script type="text/javascript">
-  // $(document).ready(function() {
-  //   var url_without_protocol = window.location.href.split("//")[1];
-  //   $('.kudos').attr('data-url',url_without_protocol);
-  //   new KudosPlease({ 
-  //       el : '.kudos',
-  //       duration : 1500,
-  //       persistent : true,
-  //       status : {
-  //          alpha : 'fontawesome-star',
-  //          beta : 'fontawesome-glass',
-  //          gamma : 'fontawesome-bolt'
-  //       }
-  //   });
-  // });
-</script> -->
 {% endblock %}
